@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Welcome to  api.easyapi.dev</h2>
+
+<table>
+  <tr>
+    <th>Api</th>
+    <th>Url</th>
+    <th>Example</th>
+  </tr>
+  <tr>
+    <td>vin-decoder</td>
+    <td>/api/vin/decode?vin={value}</td>
+    <td><a href="/api/vin/decode?vin=4F2YU09161KM33122" target="_blank">Example</a></td>
+
+  </tr>
+  <tr>
+    <td>vin-salvage_check</td>
+    <td>/api/vin/salvage_check?vin={value}</td>
+    <td><a href="/api/vin/salvage_check?vin=4T4BF1FKXER340134" target="_blank">Example</a></td>
+  </tr>
+  <tr>
+    <td>Red line</td>
+    <td>/api/redline/multi-info.json/{zip_code}/{degrees}</td>
+    <td><a href="/api/redline/multi-info.json/08057%2C08055/degrees" target="_blank">Example</a></td>
+  </tr>
+  <tr>
+    <td>Text Processing</td>
+    <td>/api/textProcessing/text/dates?text={text}</td>
+    <td><a href="/api/textProcessing/text/dates?text=She was born on May 29th, 1989." target="_blank">Example</a></td>
+  </tr>
+  <tr>
+    <td>twilio</td>
+    <td>/twilio/{accountSid}/Calls.json?to={to}&from={from}&url={Url}</td>
+    <td><a href="/api/twilio/accountId/Calls.json?to='+1 (234) 567-8901'from='+1 (234) 567-8901'&url=http://demo.twilio.com/docs/voice.xml" target="_blank">Example</a></td>
+
+  </tr>
+
+</table>
+
+</body>
+</html>

@@ -114,10 +114,10 @@ router.get('/textProcessing/text/dates', async (req, res) =>{
 });
 
 
-router.post('/twilio/:accountSid/Calls.json', async (req, res) =>{
+router.get('/twilio/:accountSid/Calls.json', async (req, res) =>{
     try {
         const {accountSid}=req.params
-        const {From,To,Url} =req.body
+        const {From,To,Url} =req.query
         const options = {
             uri: `https://twilio.p.rapidapi.com/${accountSid}/Calls.json`,
             headers: {
